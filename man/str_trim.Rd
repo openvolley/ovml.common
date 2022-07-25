@@ -22,7 +22,7 @@ image_wh(im)
 image_resz(im, sz, preserve_aspect = TRUE)
 }
 \arguments{
-\item{x, y, im, sz, preserve_aspect}{: generic input parms}
+\item{x, y, divisor, im, sz, preserve_aspect}{: generic input parms}
 }
 \description{
 Internal utilities

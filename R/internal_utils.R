@@ -1,6 +1,6 @@
 #' Internal utilities
 #'
-#' @param x,y,im,sz,preserve_aspect : generic input parms
+#' @param x,y,divisor,im,sz,preserve_aspect : generic input parms
 #' @export
 str_trim <- function(x) {
     gsub("^[[:space:]]+", "", gsub("[[:space:]]+$", "", x))

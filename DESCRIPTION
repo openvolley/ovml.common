@@ -1,6 +1,6 @@
 Package: ovml.common
 Title: Support Utilities for Volleyball Machine Learning
-Version: 0.0.1
+Version: 0.0.2
 Authors@R: c(person("Ben", "Raymond", role = c("aut", "cre"), email = "ben@untan.gl"),
              person("Adrien", "Ickowicz", role = "aut"),
              person("openvolley.org", role = "org"))
