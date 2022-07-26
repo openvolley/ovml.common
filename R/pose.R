@@ -1,3 +1,15 @@
+#' Process raw detections from pose detection network
+#'
+#' @param pose matrix: pose detection network output
+#' @param original_w integer: input image width
+#' @param original_h integer: input image height
+#' @param input_image_size integer: network image size
+#' @param as string: return results as "segments" or "keypoints"
+#' @param letterboxing logical: TRUE if the input images were letterboxed to retain their original aspect ratio
+#'
+#' @return A data.frame
+#'
+#' @export
 process_pose_dets <- function(pose, original_w, original_h, input_image_size, as = "segments", letterboxing = FALSE) {
 
     skeleton <- list(c(16, 14), c(14, 12), c(17, 15), c(15, 13), c(12, 13), c(6, 12),
