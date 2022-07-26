@@ -43,7 +43,7 @@ process_pose_dets <- function(pose, original_w, original_h, input_image_size, as
         ppx <- setNames(as.data.frame(ppx), c("object", "keypoint", "x", "y", "conf"))
         ppx$y <- unletter(ppx$y)
         ppx$x <- ppx$x / input_image_size * original_w
-        ppx$keypoint <- names(skeleton)[ppx$keypoint]
+        ppx$keypoint <- kpts[ppx$keypoint]
     }
     ppx
 }
